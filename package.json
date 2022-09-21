@@ -17,7 +17,13 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.7.1",
+    "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/tailwindcss": "^4.2.1",
-    "postcss": "^8.4.4"
+    "fibers": "^5.0.3",
+    "node-sass": "^7.0.3",
+    "postcss": "^8.4.4",
+    "sass": "^1.54.9",
+    "sass-loader": "^10.3.1"
   }
 }

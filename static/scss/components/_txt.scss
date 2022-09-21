@@ -1,0 +1,9 @@
+h1{
+  font-family: $font-monthoers;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: clamp(4rem, 8vw, 8rem);
+}
+.subtitle{
+  font-family: $font-montserrat-regular;
+  font-size: clamp(16px, 1vw, 2rem);
+}
