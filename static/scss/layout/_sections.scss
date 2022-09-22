@@ -5,9 +5,6 @@
   margin: 0 auto;
   height: 50vh;
   min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   .line{
     width: clamp(30px, 6vw, 50px);
     height: 2px;

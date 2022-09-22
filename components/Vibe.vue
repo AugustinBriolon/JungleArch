@@ -1,5 +1,5 @@
 <template>
-  <div class="white-section">
+  <div class="white-section flex flex-col justify-center">
     <h2>Ambiance</h2>
     <div class="line"></div>
     <p>De l’happy hour a la retranscription  de match. Vous vivrez une experience culinaire au coeur d’un décor floral apaisant.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis consectetur turpis id venenatis. 
