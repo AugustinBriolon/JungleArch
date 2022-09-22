@@ -1,0 +1,31 @@
+<template>
+  <div class="white-section flex items-center">
+    <div class="grid grid-cols-2 gap-2 w-2/3">
+      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
+    </div>
+    <div class="flex flex-col justify-center ml-10">
+      <h2>Des plats de qualite</h2>
+      <div class="line"></div>
+      <p>Chez Jungle Arch nous nous efforçons de sélectionner des produits de qualité afin d'offrir a nos clients la meilleure expérience culinaire possible.
+        Lorem ipsum dolor sit alemet. Nulla a mi et metus facilisis consectetur et quis lacus. </p>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  data() {
+    return {};
+  },
+  methods: {}
+}
+
+</script>
+
+<style scoped lang='scss'>
+  
+</style>
