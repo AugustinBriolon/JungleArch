@@ -1,71 +1,154 @@
 <template>
   <div>
-    <h1>Menu</h1>
-    <div>
-      <h2>Entrees</h2>
-      <div class="line"></div>
+    <div class="menu-section flex flex-col justify-center">
+      <MenuTitle title="Entrees"/>
+      <div class="flex flex-row flex-wrap">
+        <div class="menu-card">
+          <h4 class="mx-12 mb-12">A Partager</h4>
+          <div class="flex flex-row justify-between" v-for="(partage,i) in partages">
+            <div class="mb-8">
+              <h5 class="mb-3">{{ partage.title }}</h5>
+              <p>{{ partage.description }}</p>
+            </div>
+            <h5 class="menu-card-price">{{ partage.price }} €</h5>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4 class="mx-12 mb-12">Salades</h4>
+          <div class="flex flex-row justify-between" v-for="(salade,i) in salades">
+            <div class="mb-8">
+              <h5 class="mb-3">{{ salade.title }}</h5>
+              <p>{{ salade.description }}</p>
+            </div>
+            <h5 class="menu-card-price">{{ salade.price }} €</h5>
+          </div>
+        </div>
+      </div>
     </div>
     <div>
-      <h2>Plats</h2>
-      <div class="line"></div>
+      <MenuTitle title="Plats"/>
     </div>
     <div>
-      <h2>Desserts</h2>
-      <div class="line"></div>
+      <MenuTitle title="Desserts"/>
     </div>
     <div>
-      <h2>Vins</h2>
-      <div class="line"></div>
+      <MenuTitle title="Vins"/>
     </div>
     <div>
-      <h2>Cocktails</h2>
-      <div class="line"></div>
+      <MenuTitle title="Cocktails"/>
     </div>
     <div>
-      <h2>Alcools</h2>
-      <div class="line"></div>
+      <MenuTitle title="Alcools"/>
     </div>
     <div>
-      <h2>Boissons Fraiches</h2>
-      <div class="line"></div>
+      <MenuTitle title="Boissons Fraiches"/>
     </div>
     <div>
-      <h2>Boissons CHaudes</h2>
-      <div class="line"></div>
+      <MenuTitle title="Boissons Chaudes"/>
     </div>
   </div>
 </template>
 
 <script>
+import MenuTitle from './MenuTitle.vue';
 
 export default {
-  data() {
-    return {
-      menu: [
-        { name: String },
-        { price: Number },
-        { description: String }
-      ],
-    }
-  },
-  methods: {
-    asyncData: async function() {
-      const APIkey = 'keyBC7Fc0yhZ7VpP1';
-      const api = 'https://api.airtable.com/v0/appUVoiNznbBo9b6v/Plats?api_key='+APIkey
-      const data = await fetch(api).then((response) => {
-        return response.json()
-      })
-      return data.records;
+    data() {
+        return {
+            menu: [
+                { name: String },
+                { price: Number },
+                { description: String }
+            ],
+            partages: [
+              {
+                  title: "PLANCHE TAPAS",
+                  description: "beignets de calamars, nems de poulet, bouchées de Camembert, sticks de mozzarella et onion rings",
+                  price: "14",
+              },
+              {
+                  title: "PLANCHE CHARCUTERIE, FROMAGES OU MIXTE",
+                  description: "",
+                  price: "20",
+              },
+              {
+                  title: "ASSIETTE DE FRITES MAISON",
+                  description: "",
+                  price: "5,50",
+              },
+              {
+                  title: "PLANCHE VEGGIE",
+                  description: "houmous maison, crudités, crème ciboulette, galette patates douces",
+                  price: "20",
+              },
+          ],
+          salades: [
+              {
+                  title: "LA CESAR",
+                  description: "poulet croustillant, salade romaine, croûtons, copeaux de parmesan, œuf, tomates et véritable sauce cæsar",
+                  price: "17,50",
+              },
+              {
+                  title: "TARTARE DE MELON ET JAMBON SERRANO",
+                  description: "mesclun, roquette, tomates, parmesan",
+                  price: "17,50",
+              },
+              {
+                  title: "GREEN BOWL",
+                  description: "kiwi, avocat, concombre, courgettes, tomates vertes, fêta marinée aux herbes, graines de courge, vinaigrette au kiwi",
+                  price: "18",
+              },
+              {
+                  title: "ANTIPASTI",
+                  description: "courgettes, aubergines, poivrons, artichauts marinés, tomates, câpres à queue, pignons de pin, mozzarelle di buffala",
+                  price: "18",
+              },
+              {
+                  title: "POKE BOWL THON",
+                  description: "(version vegan 17.00€) thon, avocat, radis, edamame, carottes, concombre, mangue, tomates, riz vinaigré",
+                  price: "18,50",
+              },
+              {
+                  title: "SALADE DE CHÈVRE",
+                  description: "billes de chèvre frais aux fruits secs, poitrine de cochon grillée, tomates, mesclun, pommes Granny Smith, vinaigrette au miel",
+                  price: "18,50",
+              },
+          ],
+        };
     },
-    fetchApiResponse: function() {
-      console.log(this.asyncData())
-    }
-  },
-  mounted() {
-    this.asyncData()
-  }
-
+    methods: {
+        asyncData: async function () {
+            const APIkey = "keyBC7Fc0yhZ7VpP1";
+            const api = "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Plats?api_key=" + APIkey;
+            const data = await fetch(api).then((response) => {
+                return response.json();
+            });
+            return data.records;
+        },
+        fetchApiResponse: function () {
+            console.log(this.asyncData());
+        }
+    },
+    mounted() {
+        this.asyncData();
+    },
+    components: { MenuTitle }
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+
+  .menu-card {
+    width: 45%;
+    padding: clamp(5rem, 5vh, 10rem) clamp(4rem, 4vw, 8rem);
+    margin: 5vh auto;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+
+    &-price {
+      min-width: fit-content;
+      margin-left: 3vw;
+    }
+  }
+
+</style>

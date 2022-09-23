@@ -4,3 +4,10 @@
     background: $color-brown;
     margin: 20px 0;
 }
+
+.menu-section{
+    max-width: 1920px;
+    padding: 100px clamp(20px, 3vw, 100px);
+    margin: 0 auto;
+    min-height: 500px;
+}
