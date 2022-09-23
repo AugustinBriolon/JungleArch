@@ -1,23 +1,26 @@
 <template>
-  <div class="max-width-blue-section relative" id="clients">
+  <div class="white-section relative">
       <h2 class="mb-20">Ce que pensent Nos clients</h2>
 
       <!-- Slider Container  -->
       <div class="slider-testimonials flex gap-10" ref="sliderContainer" :style="slider">
 
           <!-- Card Testimonials Client -->
-          <div class="card-testimonial" v-for="(item,i) in items" ref="sliderCard">
-              <div class="pl-2 border-l-2 border-blue">
-                  <p>{{ item.decription }}</p>
-              </div>
-              <p class="client-sign"><span class='text-bolder'>{{ item.client }}</span><br>{{ item.cabinet }}</p>
+          <div class="card-testimonial flex flex-col" v-for="(item,i) in items" ref="sliderCard">
+            <div class="flex justify-center w-full">
+                <svg v-for="(item, i) in item.stars" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3536 6.52394L13.358 5.67867L10.6778 0.407754C10.6046 0.26344 10.4841 0.146614 10.3354 0.0756018C9.96227 -0.103073 9.50887 0.0458226 9.32232 0.407754L6.64213 5.67867L0.646516 6.52394C0.481218 6.54685 0.330088 6.62244 0.214379 6.73698C0.0744931 6.87645 -0.00259025 7.06409 6.6464e-05 7.25867C0.00272317 7.45324 0.0849026 7.63884 0.228547 7.77467L4.56645 11.8773L3.5416 17.6705C3.51757 17.8053 3.53294 17.9439 3.58598 18.0706C3.63901 18.1973 3.72759 18.3071 3.84166 18.3875C3.95573 18.4678 4.09074 18.5156 4.23137 18.5253C4.37199 18.535 4.51262 18.5063 4.63729 18.4425L10 15.7074L15.3628 18.4425C15.5092 18.5181 15.6792 18.5433 15.8422 18.5158C16.2531 18.4471 16.5293 18.0691 16.4585 17.6705L15.4336 11.8773L19.7715 7.77467C19.8896 7.66242 19.9675 7.51582 19.9912 7.35547C20.0549 6.95459 19.7668 6.5835 19.3536 6.52394Z" fill="#007F7F"/>
+                </svg>
+            </div>
+            <strong class="text-center pb-3">{{ item.client }}</strong>
+            <p class="text-center">{{ item.avis }}</p>
           </div>
 
       </div>
 
       <div class="flex justify-center gap-20 mt-10">
-          <nuxt-img @click="slideLeft()" class="cursor-pointer" src="/images/logos/logo-jungleArch.png" alt="fleche de direction slider" />
-          <nuxt-img @click="slideRight()" class="cursor-pointer" src="/images/logos/logo-jungleArch.png" alt="fleche de direction slider" />
+          <svg @click="slideLeft()" class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#007f7f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 4l-8 8l8 8"/></svg>
+          <svg @click="slideRight()" class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#007f7f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 4l8 8l-8 8"/></svg>
       </div>
 
   </div>
@@ -34,39 +37,24 @@ export default {
 
           items: [
               {
-                  decription: "Un logiciel de gestion est indispensable à tout avocat, autant choisir le meilleur !",
-                  client: "Mme Christophe Thevenet, Avocat.",
-                  cabinet: "Librato Avocats",
+                stars: 4,
+                client: "Paul Dupont",
+                avis: "Le restaurant est constant et ne baisse pas en qualité c’est appréciable ! De nouveaux plats seraient les bienvenus pour changer un peu.",
               },
               {
-                  decription: "Après avoir fait une analyse des logiciels disponibles pour les cabinets d’avocats, nous avons choisi zLawyer car c’est celui qui nous a paru le plus complet et le plus intuitif d’utilisation. Après quelques mois d’utilisation, on peut dire que zLawyer à l’épreuve du terrain répond complètement à notre attente.",
-                  client: "Me Thierry Marembert, Avocat.",
-                  cabinet: "Kiejman & Marembert Avocats",
+                stars: 4,
+                client: "Paul Dupont",
+                avis: "Le restaurant est constant et ne baisse pas en qualité c’est appréciable ! De nouveaux plats seraient les bienvenus pour changer un peu.",
               },
               {
-                  decription: "Le logiciel zLawyer ? en un mot ? ...la FACILITE ! C'est une solution très agréable et très simple. Il nous est devenu indispensable et il ne tombe jamais en panne.",
-                  client: "Me Benoît Gruau, Avocat.",
-                  cabinet: "Richelieu Avocats",
+                stars: 4,
+                client: "Paul Dupont",
+                avis: "Le restaurant est constant et ne baisse pas en qualité c’est appréciable ! De nouveaux plats seraient les bienvenus pour changer un peu.",
               },
               {
-                  decription: "C’est sans conteste le meilleur logiciel de facturation et de gestion et le plus easy-using avec une équipe hyper professionnelle et hyper réactive. Nous utilisons ZL depuis 7 ans et nous n’avons jamais rencontré aucun problème.",
-                  client: "Me Valérie Goffinon, Secrétaire Général.",
-                  cabinet: "Sekri Valentin Zerouk Avocats",
-              },
-              {
-                  decription: "Cela va bientôt faire 10 ans que nous utilisons Z. Un logiciel ergonomique, convivial et d’une simplicité de déploiement et d’utilisation appréciée par l’ensemble de notre équipe. A recommander les yeux fermés.",
-                  client: "Me David Guillouet, Avocat.",
-                  cabinet: "Voltaire Avocats",
-              },
-              {
-                  decription: "J’utilise zLawyer depuis des années. Cet outil me permet de facturer en deux clics et d’obtenir une analyse détaillée de la rentabilité de mes dossiers. En plus de cela, l’équipe dédiée au super est vraiment très réactive. Je recommande à 200% !",
-                  client: "Me Thomas Cuq, Avocat.",
-                  cabinet: "Ad Hoc Avocats",
-              },
-              {
-                  decription: "J’utilise zLawyer depuis plusieurs années. Il est devenu un outil de facturation incontournable au sein du cabinet. Le vrai plus, une équipe à l’écoute de ses clients et très réactive.",
-                  client: "Me Nacime Tobni, Avocat.",
-                  cabinet: "Advance Avocats",
+                stars: 4,
+                client: "Paul Dupont",
+                avis: "Le restaurant est constant et ne baisse pas en qualité c’est appréciable ! De nouveaux plats seraient les bienvenus pour changer un peu.",
               },
           ],
       }
@@ -116,9 +104,7 @@ export default {
       max-width: 700px;
       position: relative;
       padding: 50px;
-      border-radius: var(--radius-current);
-      background-color: var(--color-white);
-      box-shadow: var(--shadow-current);
+      box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
   }
   @media screen and (max-width : 1200px){
       .card-testimonial{
