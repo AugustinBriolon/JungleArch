@@ -16,6 +16,7 @@ import Vibe from '../components/Vibe.vue';
 import SectionTitle from '../components/SectionTitle.vue';
 import Plats from '../components/Plats.vue';
 import Testimonials from '../components/Testimonials.vue';
+
 export default {
     name: "IndexPage",
     components: { Hero, Vibe, SectionTitle, Plats, Testimonials }

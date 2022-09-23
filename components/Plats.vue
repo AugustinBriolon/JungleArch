@@ -1,12 +1,12 @@
 <template>
-  <div class="white-section flex items-center">
-    <div class="grid grid-cols-2 gap-2 w-2/3">
+  <div class="white-section flex lg:flex-row flex-col items-center">
+    <div class=" lg:grid hidden lg:grid-cols-2 lg:gap-2 lg:w-2/3">
       <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
       <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
       <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
       <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
     </div>
-    <div class="flex flex-col justify-center ml-10">
+    <div class="flex items-center lg:items-start flex-col justify-center ml-10">
       <h2>Des plats de qualite</h2>
       <div class="line"></div>
       <p>Chez Jungle Arch nous nous efforçons de sélectionner des produits de qualité afin d'offrir a nos clients la meilleure expérience culinaire possible.

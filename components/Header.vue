@@ -39,7 +39,7 @@ export default {
 }
 
 .sticky{
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
 }
 
