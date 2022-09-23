@@ -213,7 +213,7 @@
 
 
   </div>
-  
+
 </template>
 
 <script>
@@ -243,7 +243,7 @@ export default {
     dailyData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Dessert%20du%20Jour?api_key=" + APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Dessert%20du%20Jour?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -254,7 +254,7 @@ export default {
     dailyDessertData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Plat%20du%20Jour?api_key=" + APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Plat%20du%20Jour?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -265,7 +265,7 @@ export default {
     platsData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Plats?api_key=" + APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Plats?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -276,8 +276,7 @@ export default {
     sharedData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/A%20Partager?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/A%20Partager?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -288,8 +287,7 @@ export default {
     saladData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Salades?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Salades?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -300,8 +298,7 @@ export default {
     burgerData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Burger?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Burger?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -312,8 +309,7 @@ export default {
     dessertData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Desserts?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Desserts?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -324,8 +320,7 @@ export default {
     happyHourData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Happy%20Hours?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Happy%20Hours?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -336,8 +331,7 @@ export default {
     coktailData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Cocktails%20classiques?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Cocktails%20classiques?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
@@ -348,8 +342,7 @@ export default {
     jungleCoktailData: async function () {
       const APIkey = process.env.AIRTABLE_API_KEY;
       const api =
-        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Jungle%20Cocktails?api_key=" +
-        APIkey;
+        "https://api.airtable.com/v0/appUVoiNznbBo9b6v/Jungle%20Cocktails?api_key=keyBC7Fc0yhZ7VpP1";
       const data = await fetch(api).then((response) => {
         return response.json();
       });
