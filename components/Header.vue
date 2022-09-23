@@ -37,7 +37,7 @@ export default {
 .header{
   max-width: 1920px;
   padding: 0 clamp(20px, 3vw, 100px);
-  z-index: 99999;
+  z-index: 99;
   transition: .3s;
 }
 
