@@ -2,9 +2,9 @@
   <div>
     <div class="menu-section flex flex-col justify-center">
       <MenuTitle title="Entrees"/>
-      <div class="flex flex-row flex-wrap">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-10">
         <div class="menu-card">
-          <h4 class="mx-12 mb-12">A Partager</h4>
+          <h4 class="lg:mx-12 mb-12">A Partager</h4>
           <div class="flex flex-row justify-between" v-for="(partage,i) in partages">
             <div class="mb-8">
               <h5 class="mb-3">{{ partage.title }}</h5>
@@ -139,8 +139,8 @@ export default {
 <style lang="scss" scoped>
 
   .menu-card {
-    width: 45%;
-    padding: clamp(5rem, 5vh, 10rem) clamp(4rem, 4vw, 8rem);
+    width: 100%;
+    padding: clamp(20px, 7vh, 10rem) clamp(20px, 6vw, 8rem);
     margin: 5vh auto;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
     height: fit-content;
