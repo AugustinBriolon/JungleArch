@@ -14,7 +14,8 @@ import Hero from "../components/Hero.vue";
 import Footer from "../components/Footer.vue";
 
 export default {
-    components: { Hero, Menu, Footer }
+    components: { Hero, Menu, Footer },
+    name: "MenuPage",
 }
 </script>
 
