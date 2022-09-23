@@ -1,11 +1,12 @@
 <template>
   <div>
-    <Hero />
+    <Hero background="background1" title="Jungle Arch"/>
     <Vibe />
-    <SectionTitle background="hero" title="Plats"/>
+    <SectionTitle background="background3" title="Plats"/>
     <Plats />
-    <SectionTitle background="hero" title="Avis"/>
+    <SectionTitle background="background4" title="Avis"/>
     <Testimonials />
+    <Footer />
   </div>
 </template>
 
@@ -16,10 +17,11 @@ import Vibe from '../components/Vibe.vue';
 import SectionTitle from '../components/SectionTitle.vue';
 import Plats from '../components/Plats.vue';
 import Testimonials from '../components/Testimonials.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
     name: "IndexPage",
-    components: { Hero, Vibe, SectionTitle, Plats, Testimonials }
+    components: { Hero, Vibe, SectionTitle, Plats, Testimonials, Footer }
 }
 
 </script>

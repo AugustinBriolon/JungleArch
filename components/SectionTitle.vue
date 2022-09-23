@@ -1,8 +1,6 @@
 <template>
-  <div class="section-title relative flex justify-center items-center overflow-hidden">
-    <nuxt-img :src="`/images/backgrounds/${background}.png`" class="w-screen absolute z-0"/>
-    <div class="w-screen h-full absolute z-10 bg-black opacity-40"></div>
-    <h3 class="z-10 text-white">{{ title }}</h3>
+  <div class="section-title flex justify-center items-center overflow-hidden" :style="{'background-image': `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/backgrounds/${background}.png')`}">
+    <h3 class="text-white">{{ title }}</h3>
   </div>
 </template>
 
@@ -28,4 +26,10 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+
+.section-title{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 </style>

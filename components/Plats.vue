@@ -1,10 +1,10 @@
 <template>
   <div class="white-section flex lg:flex-row flex-col items-center">
     <div class=" lg:grid hidden lg:grid-cols-2 lg:gap-2 lg:w-2/3">
-      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
-      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
-      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
-      <nuxt-img src="/images/backgrounds/hero.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/plats/plat1.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/plats/plat2.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/plats/plat3.png" class="aspect-square w-full object-cover"/>
+      <nuxt-img src="/images/plats/plat4.png" class="aspect-square w-full object-cover"/>
     </div>
     <div class="flex items-center lg:items-start flex-col justify-center ml-10">
       <h2>Des plats de qualite</h2>

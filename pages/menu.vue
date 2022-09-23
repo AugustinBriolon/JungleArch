@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero />
+    <Hero background="background2" title="Menu"/>
     <Menu />
     <Footer />
   </div>

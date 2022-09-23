@@ -1,9 +1,9 @@
 <template>
   <div class="header flex justify-between items-center w-full" ref="header">
-    <nuxt-img src="/images/logos/logo-jungleArch.png"></nuxt-img>
+    <nuxt-link to="/"><nuxt-img src="/images/logos/logo-jungleArch.png"></nuxt-img></nuxt-link>
     <nav>
       <ul class="text-white list-style-none flex">
-        <li class="pr-20"><a href="#" class="links">Menu</a></li>
+        <li class="pr-20"><nuxt-link to="menu" class="links">Menu</nuxt-link></li>
         <li class="pr-20"><a href="#" class="links">Ambiance</a></li>
         <li class="pr-20"><a href="#" class="links">Plats</a></li>
         <li><a href="#" class="links">Avis</a></li>
