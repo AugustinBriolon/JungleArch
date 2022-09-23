@@ -1,6 +1,38 @@
 <template>
   <div>
     <h1>Menu</h1>
+    <div>
+      <h2>Entrees</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Plats</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Desserts</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Vins</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Cocktails</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Alcools</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Boissons Fraiches</h2>
+      <div class="line"></div>
+    </div>
+    <div>
+      <h2>Boissons CHaudes</h2>
+      <div class="line"></div>
+    </div>
   </div>
 </template>
 
