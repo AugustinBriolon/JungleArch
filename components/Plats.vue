@@ -1,5 +1,5 @@
 <template>
-  <div class="white-section flex lg:flex-row flex-col items-center">
+  <div class="white-section flex lg:flex-row flex-col items-center" id="plats">
     <div class=" lg:grid hidden lg:grid-cols-2 lg:gap-2 lg:w-2/3">
       <nuxt-img src="/images/plats/plat1.png" class="aspect-square w-full object-cover"/>
       <nuxt-img src="/images/plats/plat2.png" class="aspect-square w-full object-cover"/>

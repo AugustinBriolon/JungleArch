@@ -3,10 +3,10 @@
     <nuxt-link to="/"><nuxt-img src="/images/logos/logo-jungleArch.png"></nuxt-img></nuxt-link>
     <nav>
       <ul class="text-white list-style-none flex">
-        <li class="pr-20"><nuxt-link to="menu" class="links">Menu</nuxt-link></li>
-        <li class="pr-20"><a href="#" class="links">Ambiance</a></li>
-        <li class="pr-20"><a href="#" class="links">Plats</a></li>
-        <li><a href="#" class="links">Avis</a></li>
+        <li class="pr-10 lg:pr-20"><nuxt-link to="menu" class="links">Menu</nuxt-link></li>
+        <li class="hidden lg:block pr-20"><a href="#ambiance" class="links">Ambiance</a></li>
+        <li class="hidden lg:block pr-20"><a href="#plats" class="links">Plats</a></li>
+        <li class="hidden lg:block "><a href="#avis" class="links">Avis</a></li>
       </ul>
     </nav>
   </div>

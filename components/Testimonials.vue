@@ -1,5 +1,5 @@
 <template>
-  <div class="white-section relative">
+  <div class="white-section relative" id="avis">
       <h2>Ce que pensent Nos clients</h2>
       <div class="line"></div>
       <!-- Slider Container  -->

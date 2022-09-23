@@ -47,6 +47,7 @@
       <MenuTitle title="Boissons Chaudes"/>
     </div>
   </div>
+  
 </template>
 
 <script>

@@ -4,7 +4,7 @@
     <div class="flex justify-center items-center flex-col h-full">
       <h1 class="text-white">{{ title }}</h1>
       <p class="subtitle text-center pb-4 text-white">Une Jungle au coeur de la défense,  lorem ipsum dolor sit amet ...</p>
-      <button class="button button_white">Découvrir</button>
+      <a href="#ambiance"><button class="button button_white">Découvrir</button></a>
     </div>
   </div>
 </template>
